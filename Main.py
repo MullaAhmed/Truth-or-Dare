@@ -8,7 +8,6 @@ d_q=list(d_data.iloc[:,1].values)
 
 
 import tkinter , Questions
-
 win1=tkinter.Tk()          #Handle
 win1.geometry("1193x671")  #Size of the window
 
@@ -49,12 +48,14 @@ bg = tkinter.PhotoImage(file = "Back.png")
 background = tkinter.Label( win1, image = bg)
 background.place(x =0, y = 0)
 
+#Middle line
 label1 = tkinter.Label(win1,pady=1000,bg="black")
 label1.place(x=600)
 
 label2 = tkinter.Label(win1, text="What Do You Pick?",bg="#faeadd", font=("Helvetica", "55", "bold"))
 label2.place(x=210,y=160)
 
+#Buttons
 Truth = tkinter.Button(win1, text="Truth", command=Truth,pady=10,padx=70,bg="brown",font=("Helvetica", "20","bold")) 
 Truth.config(fg="white")
 Truth.place(x=250,y=400)
