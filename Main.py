@@ -17,10 +17,10 @@ class Truth():
     def __init__(self):
         self.win2 = tkinter.Tk()
         self.win2.geometry('1900x540')
-        label = tkinter.Label(self.win2, text=(Questions.truth_question(t_q)), pady=225, padx=100, bg='#faeadd',fg='brown', font=("Helvetica", "30", "bold"))
+        label = tkinter.Label(self.win2, text=(Questions.truth_question(t_q)), pady=250, padx=100, bg='#faeadd',fg='brown', font=("Helvetica", "30", "bold"))
         label.pack(expand=True,fill=tkinter.X)
-        back = tkinter.Button(self.win2, text='Click and Quit',padx=100, pady=100, bg='white', command=self.quit)
-        back.pack()
+        back = tkinter.Button(self.win2, text='Back',padx=100, pady=10, bg='white', command=self.quit)
+        back.place(x=620,y=490)
         self.win2.mainloop()
 
     def quit(self):
@@ -31,10 +31,10 @@ class Dare():
     def __init__(self):
         self.win2 = tkinter.Tk()
         self.win2.geometry('1900x540')
-        label = tkinter.Label(self.win2, text=(Questions.dare_question(d_q)), pady=225, padx=100, bg='#faeadd', fg='#e75480', font=("Helvetica", "30", "bold")) 
+        label = tkinter.Label(self.win2, text=(Questions.dare_question(d_q)), pady=250, padx=100, bg='#faeadd', fg='brown', font=("Helvetica", "30", "bold")) 
         label.pack(expand=True,fill=tkinter.X)
-        back = tkinter.Button(self.win2, text='Click and Quit',padx=100,pady=100,bg='white',command=self.quit)
-        back.pack()
+        back = tkinter.Button(self.win2, text='Click and Quit',padx=100,pady=10,bg='white',command=self.quit)
+        back.place(x=620,y=490)
         self.win2.mainloop()
 
     def quit(self):
